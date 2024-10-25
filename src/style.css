@@ -24,7 +24,7 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background: white;
+  background: #fff;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -39,6 +39,7 @@ select {
 }
 
 .city:last-child {
+  /* last child means last one in the row*/
   border: none;
 }
 
