@@ -19,34 +19,39 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select name="ChooseCity" id="ChooseCity">
+      <select id="city">
         <option value="">Choose city</option>
+        <option value="Europe/London">London</option>
+        <option value="America/NewYork">New York</option>
+        <option value="Pacific/Auckland">Auckland</option>
         <option value="los angeles">Los Angeles</option>
-        <option value="sydney">Sydney</option>
+        <option value="Australia/Sydney">Sydney</option>
       </select>
 
-      <div class="city" id="la">
-        <div>
-          <h2>Los Angeles 🇺🇸</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="la">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"><small> AM </small></div>
-      </div>
-
-      <div class="city" id="sydney">
-        <div>
-          <h2>Sydney 🇦🇺</h2>
-          <div class="date"></div>
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"><small> AM </small></div>
       </div>
-
-      <footer>
-        repository on
-        <a href="https://github.com/bee60990/WorldClock">Github</a>
-        coded by Julia
-      </footer>
     </div>
+
+    <footer>
+      repository on
+      <a href="https://github.com/bee60990/WorldClock">Github</a>
+      coded by Julia
+    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
