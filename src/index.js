@@ -22,7 +22,7 @@ function updateTime() {
   }
 }
 updateTime();
-setInterval(updateTime, 1000);
+setInterval(updateTime, 100);
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
