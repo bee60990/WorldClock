@@ -27,19 +27,19 @@ setInterval(updateTime, 1000);
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-  //split takes a string and makes an array out of it
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
-  <div class="city"
-        <div>
-          <h2>${cityTimeZone}</h2>
-          <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
-        </div>
-        <div class="time">${cityTime.format("h:mm:ss")}<small> AM </small></div>
-      </div>
+  <div class="city">
+    <div>
+      <h2>${cityName}</h2>
+      <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
+    </div>
+    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    "A"
+  )}</small></div>
+  </div>
   `;
-  //long string in order to replace the HTML Code
 }
 
 let citiesSelect = document.querySelector("#city");
